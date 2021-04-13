@@ -1,6 +1,8 @@
-# FF14 Triggernometry 触发器生成器 国服中文版
+# FF14 Triggernometry 监控生成器 国服中文版
 
-[点此进入](https://yuee98.github.io/SimpleTriggernometryTriggerCreator/)
+[英文原版 by Zeffuro](https://zeffuro.github.io/SimpleTriggernometryTriggerCreator/)
+
+[国服中文版](https://yuee98.github.io/SimpleTriggernometryTriggerCreator/)
 
 ## 2021-04-13
 
