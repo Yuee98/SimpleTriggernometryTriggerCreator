@@ -8,7 +8,7 @@ var fetchInit = {
 };
 
 async function searchXivApi(query, indexes = "", pagination) {
-	let url = `https://xivapi.com/search?string=${query}&indexes=${indexes}`;
+	let url = `https://cafemaker.wakingsands.com/search?string=${query}&indexes=${indexes}`;
 	let data = await fetch(url).then(response => response.json());
 	let results = data.Results;
 	if(pagination){
@@ -23,7 +23,7 @@ async function searchXivApi(query, indexes = "", pagination) {
 }
 
 async function fetchXivApiUrl(url) {
-	let uri = `https://xivapi.com${url}`;
+	let uri = `https://cafemaker.wakingsands.com${url}`;
 	return await fetch(uri).then(response => response.json());
 }
 
@@ -43,8 +43,8 @@ async function searchAbility() {
 				<td>${result.ID.toString(16).toUpperCase()}</td>
 				<td>${result.Name}</td>
 				<td>${result.UrlType}</td>
-				<td><img src='https://xivapi.com${result.Icon}'></td>
-				<td><button type="button" class="btn btn-primary" id="detailsbutton" data-url="${result.Url}" data-urltype="${result.UrlType}">Use this</button><a class="btn btn-primary" id="jsonbutton" href="https://xivapi.com${result.Url}" target="_blank">XIVAPI</a></td>
+				<td><img src='https://cafemaker.wakingsands.com${result.Icon}'></td>
+				<td><button type="button" class="btn btn-primary" id="detailsbutton" data-url="${result.Url}" data-urltype="${result.UrlType}">Use this</button><a class="btn btn-primary" id="jsonbutton" href="https://cafemaker.wakingsands.com${result.Url}" target="_blank">XIVAPI</a></td>
 			</tr>`;
 			$(".results-anchor").append(element);
 		}
@@ -99,7 +99,7 @@ async function getDetails(url, urlType) {
 		$("#duration").val("");
 	}
 
-	$("#imageurl").val(`https://xivapi.com${data.Icon}`);
+	$("#imageurl").val(`https://cafemaker.wakingsands.com${data.Icon}`);
 
 	currentRatio = 1;
 	$("#ratiotext").val(currentRatio);
