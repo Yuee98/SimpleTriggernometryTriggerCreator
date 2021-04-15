@@ -123,7 +123,6 @@ async function generateTrigger() {
 		template = await fetch("templates/DoT.xml", fetchInit).then(response => response.text());
 	}
 
-	let fontsize = 8.25 * currentRatio;
 	let x = $("#imagex").val();
 	let y = $("#imagey").val();
 	let overlayx = x - (4 * currentRatio);
@@ -148,7 +147,10 @@ async function generateTrigger() {
 	template = template.replace(/%overlayy%/g, overlayy);
 	template = template.replace(/%overlaywidth%/g, overlaywidth);
 	template = template.replace(/%overlayheight%/g, overlayheight);
-	template = template.replace(/%fontsize%/g, fontsize);
+	template = template.replace(/%fontname%/g, $("#fontname").val());
+	template = template.replace(/%fontsize%/g, $("#fontsize").val());
+	template = template.replace(/%fontcolor%/g, $("#fontcolor").val());
+	template = template.replace(/%outlinecolor%/g, "#4C4C4C");
 
 
 	$(".output-anchor").removeClass("d-none");

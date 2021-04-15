@@ -170,13 +170,16 @@
 					<input type="text" class="form-control" placeholder="Cooldown in seconds" id="cooldown">
 					<br />
 					<br />
-					<legend>显示位置</legend>
-					<label for="imagex">X (横坐标)</label>
-					<input type="text" class="form-control form-control-sm" placeholder="Horizontal location X"
-						id="imagex" value="960">
-					<label for="imagey">Y (纵坐标)</label>
-					<input type="text" class="form-control form-control-sm" placeholder="Vertical location Y"
-						id="imagey" value="540">
+					<legend>字体</legend>
+					<label for="fontname">字体名称</label>
+					<input type="text" class="form-control form-control-sm" placeholder="font name"
+						id="fontname" value="Arial Rounded MT Bold">
+					<label for="fontsize">字体大小</label>
+					<input type="text" class="form-control form-control-sm" placeholder="default 9.75 pt"
+						id="fontsize" value="9.75">
+					<label for="fontcolor">文字颜色</label>
+					<input type="text" class="form-control form-control-sm" placeholder="6-digit hex color"
+						id="fontcolor" value="#B6FFA4">
 				</fieldset>
 			</div>
 			<div class="col-lg-3">
@@ -185,6 +188,13 @@
 					<input type="text" class="form-control" placeholder="Duration in seconds" id="duration">
 					<br />
 					<br />
+					<legend>显示位置</legend>
+					<label for="imagex">X (横坐标)</label>
+					<input type="text" class="form-control form-control-sm" placeholder="Horizontal location X"
+						id="imagex" value="954">
+					<label for="imagey">Y (纵坐标)</label>
+					<input type="text" class="form-control form-control-sm" placeholder="Vertical location Y"
+						id="imagey" value="820">
 					<legend>生成触发器</legend>
 					<button type="button" class="btn btn-primary" id="generatetriggerbutton">生成</button>
 				</fieldset>
