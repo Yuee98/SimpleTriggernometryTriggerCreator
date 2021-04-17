@@ -156,7 +156,7 @@ async function generateTrigger() {
 	$(".output-anchor").removeClass("d-none");
 
 	$("#triggeroutput").val(template);
-	window.scrollTo(0, document.body.scrollHeight);
+	// window.scrollTo(0, document.body.scrollHeight);
 }
 
 function loadImage() {
