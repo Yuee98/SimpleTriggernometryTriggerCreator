@@ -2,7 +2,7 @@
 
 [英文原版 by Zeffuro](https://zeffuro.github.io/SimpleTriggernometryTriggerCreator/)
 
-[国服中文版](https://yuee98.github.io/SimpleTriggernometryTriggerCreator/)
+[国服中文版](https://ffxiv-trigger-creator.vercel.app/) [地址2](https://yuee98.github.io/SimpleTriggernometryTriggerCreator/)
 
 ## 2021-04-13
 
@@ -21,6 +21,10 @@
 
 - 修正正则表达式
 
-## 2021-04-29
+## 2021-04-19
 
 - 修正倒计时延时问题
+
+## 2021-04-21
+
+- 托管到[vercel](https://vercel.com/)
